@@ -6,17 +6,26 @@
 	<style type = 'text/css'>
 		.keyword{color:#C70000 ; font-size:18px}
 		.interval{margin-top:35px ; margin-bottom:35px}
+		.box{
+			width:200px ; height:800px ; background-color:#454545;
+			position:absolute ; right:0px ; top:0px
+		}
+		.box_message{color:#F5F5F5 ; font-size:18px ; line-height:24px ; letter-spacing:2px}
 	</style>
 </head>
-<body>
+<body bgcolor=#FAFAFA>
 	<h3>Hello I am Ching-Yi Hsaio</h3>
-	<img src = 'head.jpg'  width='10%'></img>
+	<img src = 'head.jpg'  width='8%'/>
 	<hr/>
+	
+	<div class='interval'>
 	<h3>Introduction</h3>
-	<div style='width:300px ; line-height:24px ; letter-spacing:2px ; border:1px solid #00E6E6'>
+	<div style='width:500px ; line-height:24px ; letter-spacing:2px ; border:1px solid #00E6E6'>
 	曾經是個影視人，<span class = 'keyword'>電視台3年經歷</span><br/>
 	現在正在學寫程式，正在努力中
 	</div>
+	</div>
+	
 	<div class='interval'>
 	<h3>My link</h3>
 	<ul>
@@ -24,7 +33,8 @@
 		<li><a href = 'https://www.youtube.com/watch?v=iwVnAXviMuY'>Micro Film</a></li>
 	</ul>
 	</div>
-	<div>
+	
+	<div class='interval'>
 	<h3>My skill</h3>
 	<table border ='1' width = '200'cellpadding = '5'>
 		<tr>
@@ -39,6 +49,28 @@
 			<td><span style = 'color:#FFA600'>html</span></td>
 			<td>5 hr</td>
 		</tr>
+		<tr>
+			<td><span style = 'color:#CA82FF'>計算機概論</span></td>
+			<td>15 hr</td>
+		</tr>
+	</table >
+	</div>
+	
+	<div class='interval'>
+		<h3>Send message</h3>
+		填寫訊息<input type = 'text'/><button id = 'btn'>送出</button>
+	</div>
+	
+	<div class = 'box'>
+	<table cellpadding = '15'>
+	<tr><td align = 'left'>
+	<span class = 'box_message'>
+	時間:早上10點<br/>
+	日期:11/24<br/>
+	星期:二<br/>
+	天氣:晴天<br/>
+	</span>
+	</td></tr>
 	</table>
 	</div>
 </body>
