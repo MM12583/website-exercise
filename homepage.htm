@@ -4,38 +4,72 @@
 	<meta charset = 'utf-8'></meta>
 	<title>Homepage</title>
 	<style type = 'text/css'>
+		body{
+			bgcolor=#FAFAFA
+		}
+		
+		h3.title{
+			font-size:30px；
+			font-family:微軟正黑體;
+			font-weight:bold;
+			color:#000000
+		}
+		
+		div.content{
+			font-size:18px；
+			font-family:Yu Mincho;
+			color:#2B2B2B;
+			line-height:22px;
+			letter-spacing:1.5px;
+			margin-top:35px;
+			margin-bottom:35px
+		}
+		
+		div.message{
+			font-family:Yu Mincho; 
+			color:#FAFAFA; 
+			font-size:18px; 
+			line-height:22px; 
+			letter-spacing:1.5px
+		}
+		
 		.keyword{color:#C70000 ; font-size:18px}
-		.interval{margin-top:35px ; margin-bottom:35px}
+		
 		.box{
-			width:200px ; height:800px ; background-color:#454545;
+			width:200px;
+			height:800px;
+			background-color:#454545;
 			position:absolute ; right:0px ; top:0px
 		}
-		.box_message{color:#F5F5F5 ; font-size:18px ; line-height:24px ; letter-spacing:2px}
+		
+		#btn{
+			border:0.5px soild #BABABA;
+			background-color:#E8E8E8;
+			padding:3px
+		}
 	</style>
 </head>
-<body bgcolor=#FAFAFA>
-	<h3>Hello I am Ching-Yi Hsaio</h3>
+<body>
+	<h3 class = 'title'>Hello I am Ching-Yi Hsaio</h3>
 	<img src = 'head.jpg'  width='8%'/>
 	<hr/>
 	
-	<div class='interval'>
+	<div class = 'content'>
 	<h3>Introduction</h3>
-	<div style='width:500px ; line-height:24px ; letter-spacing:2px ; border:1px solid #00E6E6'>
 	曾經是個影視人，<span class = 'keyword'>電視台3年經歷</span><br/>
 	現在正在學寫程式，正在努力中
 	</div>
-	</div>
 	
-	<div class='interval'>
-	<h3>My link</h3>
+	<div>
+	<h3 class = 'title'>My link</h3>
 	<ul>
 		<li><a href	= 'https://github.com/MM12583'>github</a></li>
 		<li><a href = 'https://www.youtube.com/watch?v=iwVnAXviMuY'>Micro Film</a></li>
 	</ul>
 	</div>
 	
-	<div class='interval'>
-	<h3>My skill</h3>
+	<div class = 'content'>
+	<h3 class = 'title'>My skill</h3>
 	<table border ='1' width = '200'cellpadding = '5'>
 		<tr>
 			<td><b>程式語言</b></td>
@@ -56,20 +90,20 @@
 	</table >
 	</div>
 	
-	<div class='interval'>
-		<h3>Send message</h3>
+	<div class = 'content'>
+		<h3 class = 'title'>Send message</h3>
 		填寫訊息<input type = 'text'/><button id = 'btn'>送出</button>
 	</div>
 	
 	<div class = 'box'>
 	<table cellpadding = '15'>
 	<tr><td align = 'left'>
-	<span class = 'box_message'>
+	<div class = 'message'>
 	時間:早上10點<br/>
 	日期:11/24<br/>
 	星期:二<br/>
 	天氣:晴天<br/>
-	</span>
+	</div>
 	</td></tr>
 	</table>
 	</div>
